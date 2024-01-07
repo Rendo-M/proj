@@ -3,8 +3,8 @@ from . import views, converter
 
 register_converter(converter.ACLNConverter, "acln")
 urlpatterns = [
-    path('', views.index),
-    path('list/', views.index),
+    path('', views.details),
+    path('list/', views.details),
     path('<acln:specification>/', views.number, name='number'),
     
 ]
