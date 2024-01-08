@@ -21,4 +21,6 @@ def details(request):
     return render(request, "details/info.html", context)
 
 def number(request, specification):
-    return HttpResponse(f"<h2>Перед вами новейшая разработка <br>{specification}</h2>")
+    context = {'title':'Список чертежей', 'content':'Деталь', 
+               'acln': 'details/img/plan.jpg'}
+    return render(request, "details/acln.html", context)

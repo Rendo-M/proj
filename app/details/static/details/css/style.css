@@ -33,22 +33,38 @@ header{
   position: static;
   margin-top: 10%;
 }
-
+.wrapper2{
+  position: static;
+  margin-top: 3%;
+}
 .scroll {
-    border: 1px solid #000;
-    width: 60%;
-    height: 70%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 20px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    background-color: rgba(250, 250, 250,0.7);
-    
-  } 
+  border: 1px solid #000;
+  width: 60%;
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: rgba(250, 250, 250,0.7);
+  
+} .draw {
+  border: 1px solid #000;
+  width: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  background-color: rgba(250, 250, 250,0.7);
+  
+} 
 
 .container{
     border: 2px solid #000;
@@ -65,19 +81,21 @@ header{
 }
 
 .information{
-    border: 1px solid #000;
-    float: right;
-    min-height: 150px;
-    width: 35%;
+    border: 2px solid #000;
+    width: auto;
+    min-height: 90%;
+    left: 100%;
+    top: 0;
+    position: absolute;
     margin-top: 7%;
-    margin-right: 2%;
+    margin-bottom: 7%;
+    background-color: rgba(250, 250, 250,0.7);
 }
   
 .plan{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     margin-left: 2%;
-    width: 60%;
 }
   
 footer{
