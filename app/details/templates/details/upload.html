@@ -1,0 +1,16 @@
+{% extends "details/base.html" %}
+
+{% block title %}Loading draw{% endblock %}
+{% block content %}
+<div class="title_text">
+  <form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image_file">
+    <input type="submit" value="отправить" />
+  </form>
+
+  {% if image_url %}
+    <p>File uploaded at: <a href="{{ image_url }}">{{ image_url }}</a></p>
+  {% endif %}
+</div>
+{% endblock %}

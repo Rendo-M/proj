@@ -4,12 +4,18 @@
 
 {% block content %} 
 <div class="title_text">
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Search">
+  </form>
 <h1>{{content}}</h1>
 </div>
 <div class="wrapper">
   <div class="scroll">
     {% for number in acln %}
-    <a href = {% url "number" number %}>
+    
+    <a href = {% url "number" number.name %}>
     
       <div class="container">
         
@@ -19,5 +25,7 @@
   </a>
     {% endfor %} 
   </div>
+  
 </div>  
+
 {% endblock %}  

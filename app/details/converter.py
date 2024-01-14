@@ -1,5 +1,5 @@
 class ACLNConverter:
-    regex = r'АЦЛН\.[0-9]{6}\.[0-9]{3}\.[0-9]{2}'
+    regex = r'[0-9]{6}\.[0-9]{3}\.[0-9]{2}'
 
     def to_python(self, value):
         return value

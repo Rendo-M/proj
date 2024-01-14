@@ -10,14 +10,27 @@
   
 </head>
 <body>
+ 
+  <a href='/details/'>
+<header> <img class="logo" src="{% static 'details/img/logonew.png' %}" alt="logo"/>
 
-<header>
-  <img class="logo" src="{% static 'details/img/logonew.png' %}" alt="logo"/>
 </header>
+</a>
 
 {% block content %}
-content
+<div class="title_text">
+  <table class='wrapper'>
+    <tr>
+      <td> 
+<a href = 'upload'><img class="plain" src="{% static 'details/img/add.png' %}" alt="logo"/><a></td>
+</tr>
+<tr>
+  <td> 
+<a href = 'data'><img class="plain" src="{% static 'details/img/list.png' %}" alt="logo"/><a></td>
+</tr>
+</div>  
 {% endblock %}
+
 
 <footer>
 OOO "Клейтон" 2024

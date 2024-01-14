@@ -1,16 +1,23 @@
 {% extends "details/base.html" %}
 {% load static %}
+
 {% static "" as baseUrl %}
 {% block title %}{{title}}{% endblock %}
 
 {% block content %} 
     
-    <div class="wrapper2">
+    <div class="wrapper">
         <div class='draw'>
-            <img class="plan" src="{% static ''%}{{acln}}" alt="">
+            <img class="plan" src="/media/{{content}}.png" alt="">
         </div>
         <div class="information">
-            <p>      <h1> {{content}}  </h1> 
+            <p>{{content}}</p>
+            <p>
+                 <form action="" method="post" class="formclass">
+                {% csrf_token %}
+                {{ acln }}
+                <input type="submit" value="Сохранить и выйти">
+              </form> 
             </p>
         </div>
     </div>    
